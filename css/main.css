@@ -8,6 +8,11 @@
 	src: url('../fonts/siemens_global_bold.ttf');
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -230,6 +235,7 @@
 	border: 1px solid #00646e;
 }
 
+/* int */
 .int {
 	display: none;
 	width: 100%;
@@ -314,4 +320,74 @@
 	height: 20px;
 	right: 40px;
 	bottom: 40px;
+}
+
+
+/* dom */
+.dom {
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: url('../img/dom1.png') no-repeat;
+}
+
+.dom-con {
+	float: right;
+	width: 50%;
+	height: 100%;
+	background: linear-gradient(#000028, rgb(0, 135, 190));
+	opacity: .9;
+}
+
+.dom-firm {
+	display: block;
+	margin: 40px 0 0 40px;
+	color: #00ffb9;
+	font-size: 26px;
+	font-family: 'sb';
+}
+
+.dom-proj {
+	display: block;
+	margin: 10px 40px 0 40px;
+	padding-bottom: 20px;
+	color: white;
+	font-size: 20px;
+	font-family: 'sb';
+	border-bottom: 1px solid #ccccd4;
+}
+
+.dom-list {
+	height: 444px;
+	width: auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin: 20px 40px 0 40px;
+}
+
+.dom-list::-webkit-scrollbar {
+	width: 3px;
+}
+
+.dom-list::-webkit-scrollbar-track {
+	background-color: #ccccd4;
+}
+
+.dom-list::-webkit-scrollbar-thumb {
+	background-color: #66667e;
+}
+
+
+.dom-th {
+	margin: 0 0 10px 0;
+	font-size: 18px;
+	color: #fff;
+	letter-spacing: 1px;
+}
+
+.dom-tb {
+	font-size: 16px;
+	color: white;
+	line-height: 30px;
+	margin-bottom: 20px;
 }

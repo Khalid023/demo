@@ -1,19 +1,4 @@
 $(function() {
-	$('.first ul li').click(function() {
-		//一级标签切换
-		// if ($(this).attr('class') == 'labelf-f') {
-		// 	$(this).removeClass('labelf-f').addClass('labelf-t');
-		// 	$(this).siblings('li').removeClass('labelf-t').addClass('labelf-f');
-		// }
-		// if ($(this).attr('id') == 'btn1') {
-		// 	$('#item2').hide()
-		// 	$('#item1').fadeIn();
-
-		// } else {
-		// 	$('#item1').hide()
-		// 	$('#item2').fadeIn();
-		// }
-	})
 	//二级标签切换
 	$('.second ul li').click(function() {
 		$(this).css({
@@ -35,19 +20,19 @@ $(function() {
 			left: '-1230px'
 		}, 'swing')
 	})
-
 	//详情页
 	$('#cases li').click(function() {
 		$('.example').fadeIn()
 		if ($(this).attr('id') == 1) {
 			$('.int').show()
-		} else {
+		} else if ($(this).attr('id') == 2) {
 			$('.dom').show()
 		}
 	})
 	$('.icon-Close').click(function() {
 		$('.example').fadeOut()
 		$('.int').hide()
-		$('.dom').show()
+		$('.dom').hide()
 	})
+
 })
