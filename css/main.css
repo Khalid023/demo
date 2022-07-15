@@ -333,17 +333,33 @@ html {
 
 .dom-con {
 	float: right;
-	width: 50%;
+	width: 805px;
 	height: 100%;
-	background: linear-gradient(#000028, rgb(0, 135, 190));
-	opacity: .9;
+	background-color: #000028;
+
+}
+
+.dom-fl {
+	float: left;
+	margin: 40px 0 0 40px;
+	width: 2.6px;
+	height: 26px;
+	background: linear-gradient(rgb(0, 255, 185), rgb(0, 230, 220));
+}
+
+.dom-title {
+	margin: 40px 40px 20px 40px;
+	font-size: 26px;
+	color: white;
+	padding-left: 16px;
+	font-family: 'sb'
 }
 
 .dom-firm {
 	display: block;
-	margin: 40px 0 0 40px;
+	margin: 20px 0 0 40px;
 	color: #00ffb9;
-	font-size: 26px;
+	font-size: 20px;
 	font-family: 'sb';
 }
 
@@ -351,43 +367,47 @@ html {
 	display: block;
 	margin: 10px 40px 0 40px;
 	padding-bottom: 20px;
-	color: white;
+	color: #00ffb9;
 	font-size: 20px;
 	font-family: 'sb';
 	border-bottom: 1px solid #ccccd4;
 }
 
 .dom-list {
-	height: 444px;
+	height: 400px;
 	width: auto;
-	overflow-x: hidden;
-	overflow-y: scroll;
+	overflow: hidden;
 	margin: 20px 40px 0 40px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .dom-list::-webkit-scrollbar {
 	width: 3px;
 }
 
-.dom-list::-webkit-scrollbar-track {
+/* .dom-list::-webkit-scrollbar-track {
 	background-color: #ccccd4;
 }
 
 .dom-list::-webkit-scrollbar-thumb {
 	background-color: #66667e;
-}
-
+} */
 
 .dom-th {
 	margin: 0 0 10px 0;
 	font-size: 18px;
-	color: #fff;
+	color: #00ffb9;
 	letter-spacing: 1px;
+	font-family: 'sb'
 }
 
 .dom-tb {
+	margin-bottom: 20px;
+}
+
+.dom-tb li {
 	font-size: 16px;
 	color: white;
 	line-height: 30px;
-	margin-bottom: 20px;
 }

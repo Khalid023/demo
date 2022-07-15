@@ -396,8 +396,9 @@
 
 .icon-Stop:before {
 	content: "\e957";
-	line-height: 18px;
-	color: #00ffb9;
+	font-size: 10px;
+	line-height: 16px;
+	color: white;
 }
 
 .icon-Success:before {
