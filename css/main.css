@@ -1,0 +1,317 @@
+@font-face {
+	font-family: "sr";
+	src: url('../fonts/siemens_global_roman.ttf');
+}
+
+@font-face {
+	font-family: "sb";
+	src: url('../fonts/siemens_global_bold.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'sr';
+	list-style: none;
+	text-decoration: none;
+}
+
+.container {
+	position: relative;
+	min-width: 1200px;
+	width: 100vw;
+	min-height: 600px;
+	height: 100vh;
+	overflow: hidden;
+	background: #000028;
+}
+
+.w {
+	position: relative;
+	margin: 0 auto;
+	width: 1200px;
+	overflow: hidden;
+}
+
+/* header */
+.header {
+	width: 100%;
+	height: 20px;
+	padding-top: 40px;
+}
+
+.controler {
+	float: right;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+/* title */
+.title {
+	margin-top: 60px;
+}
+
+.title div {
+	float: left;
+	width: 3.6px;
+	height: 72px;
+	background: linear-gradient(#00ffb9, #00e6dc);
+}
+
+.title h1 {
+	font-family: 'sb';
+	font-size: 36px;
+	line-height: 36px;
+	color: white;
+	padding-left: 21.6px;
+}
+
+.title p {
+	font-family: 'sr';
+	padding-top: 18px;
+	padding-left: 21.6px;
+	font-size: 18px;
+	color: white;
+}
+
+/* label */
+.label {
+	margin-top: 40px;
+	width: 1200px;
+	height: 160px;
+}
+
+.first {
+	float: left;
+	height: 102px;
+	width: 120px;
+}
+
+.first li {
+	width: 100px;
+	font-family: "sb";
+	font-size: 18px;
+	color: white;
+	letter-spacing: 5px;
+}
+
+.labelf-t {
+	padding-top: 35px;
+}
+
+.labelf-f {
+	padding-top: 103px;
+}
+
+
+.second {
+	float: left;
+	overflow: hidden;
+	width: 1080px;
+}
+
+.second div {
+	overflow: hidden;
+	width: 1100px;
+	padding-top: 20px;
+}
+
+.second ul li {
+	display: inline-block;
+	height: 30px;
+	letter-spacing: 2px;
+	padding: 0 20px;
+	font-size: 16px;
+	line-height: 30px;
+	margin: 10px 0;
+	margin-right: 20px;
+	border: 1px solid rgb(0, 204, 204);
+	color: rgb(0, 204, 204);
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.second li:hover {
+	color: #00ffb9;
+	border: 1px solid #00ffb9;
+}
+
+/* content */
+.content {
+	position: relative;
+	margin-top: 60px;
+	width: 5000px;
+	height: 375px;
+}
+
+#prev {
+	position: absolute;
+	z-index: 2;
+	width: 50px;
+	height: 50px;
+	top: 115px;
+	background-color: #ccccd4;
+	opacity: .8;
+	cursor: pointer;
+}
+
+#prev:hover {
+	background-color: #66667e;
+	opacity: .8;
+}
+
+#next {
+	position: absolute;
+	z-index: 2;
+	width: 50px;
+	height: 50px;
+	left: 1150px;
+	top: 115px;
+	background-color: #ccccd4;
+	opacity: .8;
+	cursor: pointer;
+}
+
+#next:hover {
+	background-color: #66667e;
+	opacity: .8;
+}
+
+.content ul {
+	position: absolute;
+	left: 0px;
+}
+
+.content ul li {
+	float: left;
+	width: 380px;
+	height: 285px;
+	margin-right: 30px;
+	cursor: pointer;
+}
+
+.caseh {
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(#000028, rgb(0, 135, 190));
+	color: white;
+}
+
+.caseh div {
+	float: left;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 2px;
+	height: 50px;
+	background: linear-gradient(#00ffb9, #00e6dc);
+}
+
+.caseh p {
+	font-family: "sb";
+	padding: 15px 0 0 32px;
+	font-size: 20px;
+	line-height: 1.5em;
+
+}
+
+
+/* example */
+.example {
+	display: none;
+	z-index: 3;
+	position: absolute;
+	width: 1120px;
+	height: 630px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background: linear-gradient(#000028, #009999);
+	border: 1px solid #00646e;
+}
+
+.int {
+	display: none;
+	width: 100%;
+	height: 100%;
+}
+
+.l {
+	float: left;
+	width: 630px;
+	height: 630px;
+	overflow: hidden;
+}
+
+.r {
+	position: relative;
+	float: right;
+	width: 410px;
+	height: 550px;
+	padding: 40px;
+}
+
+.firmName {
+	display: block;
+	color: #0087be;
+	font-size: 20px;
+	font-family: 'sb';
+	margin-bottom: 10px;
+}
+
+.caseName {
+	display: block;
+	color: #00ffb9;
+	font-size: 26px;
+	font-family: 'sb';
+}
+
+.location {
+	display: block;
+	color: #fff;
+	font-size: 20px;
+	font-family: 'sb';
+	margin: 40px 0;
+}
+
+.interval {
+	width: 50px;
+	height: 2px;
+	background-color: #00ffb9;
+	margin-bottom: 40px;
+}
+
+.int-items {
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+	margin-bottom: 40px;
+	letter-spacing: 1px;
+
+}
+
+.int-items li:nth-child(even) {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 1px;
+	margin: 15px 0;
+	background-color: #ccccd4;
+}
+
+.block {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #00ffb9;
+	top: -35px;
+	left: -20px;
+}
+
+.r img {
+	position: absolute;
+	height: 20px;
+	right: 40px;
+	bottom: 40px;
+}
