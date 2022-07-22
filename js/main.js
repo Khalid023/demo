@@ -1,4 +1,18 @@
 $(function() {
+	//一级标签切换
+	$('.first li').click(function() {
+		if ($(this).attr('id') == 'btn1') {
+			$('#item2').hide()
+			$('#item1').fadeIn()
+			$(this).addClass('label-chosen')
+			$(this).siblings('li').removeClass('label-chosen')
+		} else {
+			$('#item1').hide()
+			$('#item2').fadeIn()
+			$(this).addClass('label-chosen')
+			$(this).siblings('li').removeClass('label-chosen')
+		}
+	})
 	//二级标签切换
 	$('.second ul li').click(function() {
 		$(this).css({
