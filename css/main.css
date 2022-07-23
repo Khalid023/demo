@@ -54,30 +54,32 @@ html {
 
 /* title */
 .title {
-	margin-top: 60px;
+	margin-top: 31px;
 }
 
 .title div {
 	float: left;
 	width: 3.6px;
-	height: 72px;
+	height: 90px;
+	margin-top: 9px;
 	background: linear-gradient(#00ffb9, #00e6dc);
 }
 
 .title h1 {
 	font-family: 'sb';
 	font-size: 36px;
-	line-height: 36px;
+	line-height: 1.5em;
 	color: white;
 	padding-left: 21.6px;
 }
 
 .title p {
 	font-family: 'sr';
-	padding-top: 18px;
-	padding-left: 21.6px;
+	padding-top: 9px;
 	font-size: 18px;
+	line-height: 1.5em;
 	color: white;
+	letter-spacing: 1px;
 }
 
 /* label */
@@ -199,9 +201,11 @@ html {
 }
 
 .caseh {
-	width: 100%;
+	position: absolute;
+	top: 283px;
+	width: 380px;
 	height: 100px;
-	background: linear-gradient(#000028, rgb(0, 153, 153));
+	background-color: #66667e;
 	color: white;
 }
 
@@ -216,7 +220,7 @@ html {
 
 .caseh p {
 	font-family: "sb";
-	padding: 10px 0 0 20px;
+	padding: 13px 0 0 20px;
 	font-size: 20px;
 	line-height: 1.5em;
 
@@ -338,7 +342,7 @@ html {
 	float: right;
 	width: 805px;
 	height: 100%;
-	background-color: #000028;
+	background: linear-gradient(#000028, rgb(0, 153, 153));
 
 }
 
@@ -354,7 +358,6 @@ html {
 	margin: 40px 40px 20px 40px;
 	font-size: 26px;
 	color: white;
-	padding-left: 16px;
 	font-family: 'sb'
 }
 
@@ -413,4 +416,14 @@ html {
 	font-size: 16px;
 	color: white;
 	line-height: 30px;
+}
+
+.dom-tb span {
+	float: left;
+	display: block;
+	margin-top: 4px;
+}
+
+.dom-tb li p {
+	padding-left: 20px;
 }
