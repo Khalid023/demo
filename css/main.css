@@ -27,7 +27,6 @@ html {
 	width: 100vw;
 	min-height: 600px;
 	height: 100vh;
-	overflow: hidden;
 	background: #000028;
 }
 
@@ -35,7 +34,6 @@ html {
 	position: relative;
 	margin: 0 auto;
 	width: 1200px;
-	overflow: hidden;
 }
 
 /* header */
@@ -46,10 +44,22 @@ html {
 }
 
 .controler {
-	float: right;
-	color: white;
+	z-index: 999;
+	position: absolute;
+	bottom: 0px;
+	left: 1250px;
+	width: 30px;
+	height: 140px;
+	padding: 10px 5px;
+	background-color: #fff;
 	font-size: 16px;
 	cursor: pointer;
+	border-radius: 20px;
+}
+
+.controler li {
+	margin: 15px 0;
+	text-align: center;
 }
 
 /* title */
@@ -150,7 +160,8 @@ html {
 .content {
 	position: relative;
 	margin-top: 60px;
-	width: 5000px;
+	width: 1200px;
+	overflow: hidden;
 	height: 375px;
 }
 
@@ -189,6 +200,7 @@ html {
 
 .content ul {
 	position: absolute;
+	width: 5000px;
 	left: 0px;
 }
 
